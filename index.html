@@ -1,18 +1,32 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Calculator</title>
-    
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    
+    <head>
+        <title>Loan Calculator</title>
 
-    <!-- Custom Javascript -->
+    </head>
+
+<body>
+    <div class="">
+        <p>Amount ($):
+            <input id="amount" type="number" onchange="Calculate()">
+        </p>
+
+        <p>Interest Rate:
+            <input id="rate" type="number" onchange="Calculate()">
+        </p>
+
+        <p>Week to Pay:
+            <input id="week" type="number" onchange="Calculate()">
+        </p>
+
+        <h2 id="total"></h2>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>
